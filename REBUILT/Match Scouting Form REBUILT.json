@@ -1,0 +1,322 @@
+[
+  {
+    "type": "header",
+    "label": "Pre-Match"
+  },
+  {
+    "type": "multiselect",
+    "label": "Where does the robot start",
+    "options": [
+      "Outpost side",
+      "Middle",
+      "Outside side"
+    ],
+    "id": "StartPos"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Autonomous"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they leave their starting position?",
+    "id": "AutoMove"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they climb in Auto?",
+    "id": "AutoClimb"
+  },
+  {
+    "type": "counter",
+    "label": "Fuel scored by robot in Auto Single Fuel",
+    "id": "autoFuelsingle",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "counter",
+    "label": "Fuel scored by robot in Auto set of Five Fuel",
+    "id": "autoFuelset",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "counter",
+    "label": "Fuel scored by robot in Auto set of Ten Fuel",
+    "id": "autoFuelsetten",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Tele-Operated"
+  },
+  {
+    "type": "multiselect",
+    "label": "What Shift did they start on?",
+    "options": [
+      "1st Shift (Losing coming out of Auto)",
+      "2nd Shift (Winning coming out of Auto)"
+    ],
+    "id": "Shift"
+  },
+  {
+    "type": "counter",
+    "label": "Single Fuel scored by robot in Hub",
+    "id": "SingleFuel",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "counter",
+    "label": "Set of 5 Fuel scored by robot in Hub",
+    "id": "SetsOfFuel",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "counter",
+    "label": "Set of 10 Fuel scored by robot in Hub",
+    "id": "SetsOfFuelTen",
+    "allow_negative": false,
+    "variant": "standard"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Endgame"
+  },
+  {
+    "type": "slider",
+    "label": "How much time was on the clock when they started climbing?",
+    "options": {
+      "min": 0,
+      "max": 150,
+      "step": 5
+    },
+    "variant": "standard",
+    "id": "climbingStartTime"
+  },
+  {
+    "type": "multiselect",
+    "label": "What tier did the robot climb to",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "id": "ClimbHeight"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Post-Match"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they go to the Neutral Zone in Auto?",
+    "id": "AutoNeutral"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they feed the Alliance Zone in Auto? (Shoot Fuel from the Neutral Zone to the Alliance Zone)",
+    "id": "Autofeed"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they get Fuel from the Depot?",
+    "id": "DepotFuel"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they pick up Fuel from the ground?",
+    "id": "IntakeGround"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they get Fuel from the Outpost?",
+    "id": "OutpostIntake"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they feed the Outpost?",
+    "id": "DidFeedOutpost"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "label": "Feeder/Passer (Shot/Pushed Fuel from Neutral/Opposing Alliance Zone to Alliance Zone)",
+    "id": "Didfeed"
+  },
+  {
+    "type": "slider",
+    "id": "qFeederSkill",
+    "label": "Feeder Skill from 0-Didn't to 5-Very Effective?",
+    "options": {
+      "min": 0,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "label": "Can they shoot and move at the same time?",
+    "id": "MoveandShoot"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they go under the Trench?",
+    "id": "didgoundertrench"
+  },
+  {
+    "type": "checkbox",
+    "id": "shoottower",
+    "label": "Did they shoot from the Tower AFTER climbing?"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "id": "diedDuringMatch",
+    "label": "Died during the match (or never started)?"
+  },
+  {
+    "type": "checkbox",
+    "id": "diedonbump",
+    "label": "Died/stuck on the Bump?"
+  },
+  {
+    "type": "checkbox",
+    "id": "stuckfuel",
+    "label": "Did they died/stuck on Fuel?"
+  },
+  {
+    "type": "checkbox",
+    "id": "TippedOver",
+    "label": "Tipped over during the match?"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "slider",
+    "id": "qDefenseQuality",
+    "label": "Played Defense from 0-Not Played to 5-Very Effective?",
+    "options": {
+      "min": 0,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "slider",
+    "id": "qDriverSkill",
+    "label": "Driver Skill from 1-Limited to 5-Very Effective?",
+    "options": {
+      "min": 1,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "id": "hightscoring",
+    "label": "Was it a high scoring bot?"
+  },
+  {
+    "type": "checkbox",
+    "id": "lowscoring",
+    "label": "Was it a low scoring bot?"
+  },
+  {
+    "type": "slider",
+    "id": "qFuelAccuracy",
+    "label": "Fuel Accuracy from 0-Didn't Score Fuel to 5-Very Accurate?",
+    "options": {
+      "min": 0,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "checkbox",
+    "id": "RedCard",
+    "label": "Red Card?"
+  },
+  {
+    "type": "checkbox",
+    "id": "YellowCard",
+    "label": "Yellow Card?"
+  },
+  {
+    "type": "textblock",
+    "id": "otherNotes",
+    "label": "Other comments and notes:"
+  },
+  {
+    "type": "derived",
+    "formula": "autoFuelsingle + 5*autoFuelset + 10*autoFuelsetten + 15*AutoClimb",
+    "id": "AutoPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "SingleFuel + 5*SetsOfFuel + 10*SetsOfFuelTen",
+    "id": "TeleopPoints"
+  },
+  {
+    "type": "derived",
+    "formula": " multiselect(ClimbHeight, '0', 0, '1', 10, '2', 20, '3',30)",
+    "id": "EndgamePoints"
+  },
+  {
+    "type": "derived",
+    "formula": "AutoPoints + TeleopPoints + EndgamePoints",
+    "id": "contributedPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "SingleFuel + 5*SetsOfFuel + 10*SetsOfFuelTen + autoFuelsingle + 5*autoFuelset + 10*autoFuelsetten",
+    "id": "FuelPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "multiselect(ClimbHeight, '0', 0, '1', 10, '2', 20, '3',30) + 15*AutoClimb",
+    "id": "ClimbPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "if(FuelPoints > (SingleFuel + 5*SetsOfFuel + 10*SetsOfFuelTen), 1, 0)",
+    "id": "AutoMistake"
+  }
+]
