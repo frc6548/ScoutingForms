@@ -7,8 +7,12 @@
     "type": "spacer"
   },
   {
+    "type": "subheader",
+    "label": "REMEMBER TO TAKE A PHOTO OF THE ROBOT IT IS NECCESSARY COME BACK LATER IF YOU NEED TO OR FIND THE ROBOT ON THE FIELD (Scroll up and click 'Upload main photo'"
+  },
+  {
     "type": "textblock",
-    "label": "Would you eat a ghostpepper pizza?",
+    "label": "Would you eat a ghostpepper pizza?(Actually ask this *Cough-Kaylee-Cough*)",
     "id": "Yes, but for the plot."
   },
   {
@@ -22,48 +26,14 @@
     "id": "driveBaseType"
   },
   {
-    "type": "slider",
-    "label": "Robot Frame Length (in):",
-    "id": "Length",
-    "options": {
-      "min": 0,
-      "max": 48,
-      "step": 1
-    },
-    "variant": "standard"
+    "type": "checkbox",
+    "label": "Do they have a rotating turret?",
+    "id": "turret"
   },
   {
-    "type": "slider",
-    "label": "Robot Frame Width (in):",
-    "id": "Width",
-    "options": {
-      "min": 0,
-      "max": 48,
-      "step": 1
-    },
-    "variant": "standard"
-  },
-  {
-    "type": "slider",
-    "label": "Robot Height (in):",
-    "id": "Height",
-    "options": {
-      "min": 0,
-      "max": 30,
-      "step": 1
-    },
-    "variant": "standard"
-  },
-  {
-    "type": "slider",
-    "label": "Robot weight w/out bumpers or battery (lbs):",
-    "id": "Weight",
-    "options": {
-      "min": 60,
-      "max": 125,
-      "step": 5
-    },
-    "variant": "standard"
+    "type": "checkbox",
+    "label": "Can they go under the trench?",
+    "id": "canundertrench"
   },
   {
     "type": "subheader",
@@ -97,8 +67,8 @@
     "id": "numFuelAuto",
     "options": {
       "min": 0,
-      "max": 20,
-      "step": 1
+      "max": 150,
+      "step": 5
     },
     "variant": "standard"
   },
@@ -120,17 +90,17 @@
   },
   {
     "type": "checkbox",
-    "label": "Can they get Fuel from the Depot in Auto?",
+    "label": "Do they get Fuel from the Depot in Auto?",
     "id": "candepotauto"
   },
   {
     "type": "checkbox",
-    "label": "Can they get Fuel from the Outpost in Auto?",
+    "label": "Do they get Fuel from the Outpost in Auto?",
     "id": "canfueloutpostauto"
   },
   {
     "type": "subheader",
-    "label": "Where Can They Start In Auto?"
+    "label": "Where do They Start In Auto?"
   },
   {
     "type": "checkbox",
@@ -169,16 +139,16 @@
     "id": "intakeHoldingAbility",
     "label": "How much Fuel can your robot hold at once in its hopper?",
     "options": {
-      "min": 1,
+      "min": 0,
       "max": 100,
-      "step": 1
+      "step": 5
     },
     "variant": "standard"
   },
   {
     "type": "slider",
     "id": "TimeDurationPickUp",
-    "label": "How long does it take you to pick up this amount of Fuel? (seconds)",
+    "label": "How long does it take you to fill your hopper? (seconds)",
     "options": {
       "min": 0,
       "max": 15,
@@ -189,7 +159,7 @@
   {
     "type": "slider",
     "id": "TimeDurationShoot",
-    "label": "How long does it take you to shoot this amount of Fuel? (seconds)",
+    "label": "How long does it take you to shoot a hoppers worth of Fuel? (seconds)",
     "options": {
       "min": 0,
       "max": 15,
@@ -199,13 +169,8 @@
   },
   {
     "type": "checkbox",
-    "label": "Can they pick up Fuel from the Depot?",
-    "id": "canPickupFuelDepot"
-  },
-  {
-    "type": "checkbox",
-    "label": "Can they also feed our Alliance Zone from the other alliance's Alliance Zone?(Shoot Fuel from Alliance Zone to Alliance Zone)",
-    "id": "canfeedAZfromAZ"
+    "label": "Can they feed our Alliance Zone by SHOOTING Fuel from the Neutral zone to our Alliance Zone?",
+    "id": "canshootfeed"
   },
   {
     "type": "checkbox",
@@ -221,7 +186,12 @@
   },
   {
     "type": "subheader",
-    "label": "What do they do climbing wise?"
+    "label": "Do they climb in Auto?"
+  },
+  {
+    "type": "checkbox",
+    "label": "Climb then keep scoring Fuel?",
+    "id": "shootclimb"
   },
   {
     "type": "checkbox",
@@ -245,7 +215,7 @@
   },
   {
     "type": "subheader",
-    "label": "What direction do they prefer to climb in?"
+    "label": "What direction do they prefer to climb in (View from Driver's Station)?"
   },
   {
     "type": "checkbox",
@@ -292,7 +262,7 @@
   },
   {
     "type": "textblock",
-    "label": "FINAL THOUGHTS / NOTES",
+    "label": "FINAL THOUGHTS / NOTES (Do not make this take 5 years Lucas B)",
     "id": "notes"
   }
 ]
